@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost Footage — Clip 4 of 5</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G176TZC8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G176TZC8TC', { transport_type: 'beacon' });
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "YOUR_CF_TOKEN"}'></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:#050508;
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    max-width:500px;
+    margin:0 auto;
+    padding-bottom:40px;
+    background-image:
+      radial-gradient(ellipse at top, #0d0d1a 0%, #050508 60%);
+  }
+
+  /* HEADER */
+  .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 16px 6px;
+    background:rgba(5,5,12,0.95);
+    border-bottom:1px solid #1a0a2e;
+  }
+  .logo{font-size:20px;font-weight:900;letter-spacing:2px;}
+  .logo .ghost{color:#9D4EDD;text-shadow:0 0 10px rgba(157,78,221,0.8);}
+  .logo .play{color:#E0AAFF;}
+  .fav{font-size:12px;color:#4a2a6a;}
+  .subline{
+    color:#9D4EDD;
+    font-size:11px;letter-spacing:3px;
+    text-align:center;padding:6px 0 2px;
+    text-shadow:0 0 8px rgba(157,78,221,0.6);
+  }
+  .desc{color:#4a3a5a;font-size:11px;text-align:center;padding-bottom:6px;}
+
+  /* TOP AD */
+  .ad-top{
+    width:100%;min-height:100px;
+    background:#060608;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+    border-bottom:1px solid #1a0a2e;
+  }
+
+  /* BADGE */
+  .badge{text-align:center;padding:10px 16px 4px;}
+  .badge span{
+    background:linear-gradient(135deg,#4a0080,#9D4EDD);
+    color:#fff;
+    font-size:11px;font-weight:900;
+    padding:5px 16px;border-radius:20px;
+    letter-spacing:1px;
+    box-shadow:0 0 12px rgba(157,78,221,0.5);
+  }
+
+  /* TITLE */
+  .title-section{padding:10px 16px 8px;text-align:center;}
+  .main-title{
+    font-size:19px;font-weight:900;
+    color:#E0AAFF;
+    line-height:1.3;margin-bottom:4px;
+    text-shadow:0 0 15px rgba(157,78,221,0.4);
+  }
+  .main-sub{font-size:11px;color:#5a4a6a;line-height:1.5;}
+
+  /* META ROW */
+  .meta-row{
+    display:flex;justify-content:space-between;
+    align-items:center;padding:0 16px 8px;
+    font-size:11px;
+  }
+  .views{color:#9D4EDD;font-weight:700;}
+  .clip-tag{
+    background:#0d0d1a;
+    border:1px solid #9D4EDD;
+    color:#9D4EDD;
+    padding:3px 10px;border-radius:20px;
+    font-size:10px;font-weight:700;
+    letter-spacing:0.5px;
+    box-shadow:0 0 6px rgba(157,78,221,0.3);
+  }
+
+  /* VIDEO */
+  .video-wrap{
+    margin:0 16px 12px;
+    border:2px solid #9D4EDD;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+    background:#000;
+    box-shadow:0 0 25px rgba(157,78,221,0.25),
+               0 0 60px rgba(157,78,221,0.1);
+  }
+  .video-wrap video{
+    width:100%;aspect-ratio:1/1;
+    object-fit:cover;display:block;
+    filter:contrast(1.05) saturate(0.85);
+  }
+  .hd-badge{
+    position:absolute;top:10px;right:10px;
+    border:1px solid #9D4EDD;
+    padding:2px 8px;font-size:11px;
+    border-radius:4px;
+    background:rgba(5,5,12,0.8);
+    color:#9D4EDD;font-weight:bold;
+  }
+  .mute-wrap{position:absolute;bottom:12px;left:12px;z-index:10;}
+  .mute-pill{
+    display:flex;align-items:center;gap:6px;
+    background:rgba(5,5,12,0.8);
+    border:1px solid #9D4EDD;
+    border-radius:20px;
+    padding:6px 12px 6px 8px;
+    cursor:pointer;color:#fff;
+  }
+  .pill-icon{font-size:14px;}
+  .pill-text{font-size:11px;font-weight:600;color:#9D4EDD;}
+
+  /* PROGRESS */
+  .progress-section{padding:0 16px;margin-bottom:12px;}
+  .prog-row{
+    display:flex;justify-content:space-between;
+    font-size:11px;margin-bottom:6px;
+  }
+  .prog-label{color:#3a2a4a;font-weight:600;letter-spacing:0.5px;}
+  .prog-pct{color:#9D4EDD;font-weight:800;}
+  .prog-bar{height:4px;background:#0d0d1a;border-radius:10px;overflow:hidden;}
+  .prog-fill{
+    height:100%;width:80%;
+    background:linear-gradient(90deg,#4a0080,#9D4EDD,#C77DFF);
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(157,78,221,0.6);
+  }
+
+  /* HOOK BOX */
+  .hook-box{
+    margin:0 16px 12px;
+    background:#0a0a14;
+    border:1px solid #1a0a2e;
+    border-left:3px solid #9D4EDD;
+    border-radius:8px;
+    padding:14px 16px;
+    display:flex;align-items:center;gap:12px;
+    box-shadow:inset 0 0 20px rgba(157,78,221,0.05);
+  }
+  .hook-icon{font-size:22px;flex-shrink:0;}
+  .hook-text .ht{font-size:13px;font-weight:700;color:#E0AAFF;margin-bottom:2px;}
+  .hook-text .hs{font-size:11px;color:#9D4EDD;}
+  .hook-arrow{margin-left:auto;color:#9D4EDD;font-size:18px;}
+
+  /* SOCIAL PROOF */
+  .social-row{
+    display:flex;align-items:center;justify-content:center;
+    gap:8px;margin-bottom:12px;
+    font-size:11px;color:#3a2a4a;
+  }
+  .live-dot{
+    width:7px;height:7px;
+    background:#9D4EDD;border-radius:50%;
+    animation:blink 1.5s infinite;flex-shrink:0;
+    box-shadow:0 0 6px rgba(157,78,221,0.8);
+  }
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+
+  /* CTA */
+  .cta{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    margin:0 16px 8px;
+    background:linear-gradient(135deg,#4a0080,#9D4EDD);
+    border:none;border-radius:8px;padding:18px;
+    width:calc(100% - 32px);
+    color:#fff;font-size:16px;font-weight:900;
+    cursor:pointer;letter-spacing:0.5px;
+    transition:opacity 0.3s,transform 0.1s;
+    box-shadow:0 0 20px rgba(157,78,221,0.4);
+    animation:ghostGlow 2s ease infinite;
+  }
+  .cta:active{transform:scale(0.98);}
+
+  .lock-note{display:none;}
+
+  .lock-note{
+    text-align:center;font-size:12px;
+    color:#3a2a4a;margin-bottom:14px;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+
+  /* BOTTOM AD */
+  .ad-bottom{
+    width:100%;min-height:250px;
+    background:#060608;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;margin-bottom:16px;
+    border-top:1px solid #1a0a2e;
+    border-bottom:1px solid #1a0a2e;
+  }
+
+  /* FOOTER ICONS */
+  .footer-icons{
+    display:flex;justify-content:space-around;
+    margin:0 16px 16px;
+    font-size:10px;color:#2a1a3a;text-align:center;
+  }
+  .footer-icons div{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:18px;}
+  .footer-icons span{font-size:10px;color:#2a1a3a;}
+
+  /* PAGE TAG */
+  .page-tag{text-align:center;margin-top:6px;}
+  .page-tag span{
+    background:linear-gradient(135deg,#4a0080,#9D4EDD);
+    color:#fff;padding:5px 16px;border-radius:4px;
+    font-size:12px;font-weight:900;letter-spacing:1px;
+    box-shadow:0 0 10px rgba(157,78,221,0.4);
+  }
+
+  /* TEASER TEXT */
+  .teaser-box{
+    margin:0 16px 12px;
+    background:#0a0514;
+    border:1px solid #2a0a4a;
+    border-radius:8px;
+    padding:12px 14px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .teaser-box::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(157,78,221,0.05),transparent);
+  }
+  .teaser-text{
+    font-size:12px;
+    color:#C77DFF;
+    line-height:1.7;
+    font-weight:600;
+    font-style:italic;
+  }
+
+  @keyframes ghostGlow{
+    0%,100%{box-shadow:0 0 20px rgba(157,78,221,0.4);}
+    50%{box-shadow:0 0 35px 8px rgba(157,78,221,0.7);}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div style="font-size:18px;color:#2a1a3a">&#9776;</div>
+    <div class="logo"><span class="ghost">👻</span> <span class="play">GHOST FILES</span></div>
+    <div class="fav">&#9825; SAVE</div>
+  </div>
+  <div class="subline">&mdash; REAL PARANORMAL FOOTAGE &mdash;</div>
+  <div class="desc">Full footage revealed on the last clip.</div>
+
+  
+  <div class="ad-top"><!-- GPT 320x100 tag here --></div>
+
+  <div class="badge"><span>⚠️ WARNING: DISTURBING</span></div>
+
+  <div class="title-section">
+    <div class="main-title">The Clearest Ghost Footage Ever...</div>
+    <div class="main-sub">Experts say this is the most compelling paranormal evidence ever captured</div>
+  </div>
+
+  <div class="meta-row">
+    <span class="views">&#128065; 6.2M views</span>
+    <span class="clip-tag">CLIP 4 OF 5</span>
+  </div>
+
+  <div class="video-wrap">
+    <video id="mainVideo"
+      src="https://pub-5f52dd93f3804fbcb113f853eb38a385.r2.dev/clip4.mp4"
+      poster="https://pub-5f52dd93f3804fbcb113f853eb38a385.r2.dev/clip4-poster.jpeg"
+      autoplay muted playsinline></video>
+    <div class="hd-badge">HD</div>
+    <div class="mute-wrap">
+      <div class="mute-pill" id="mutePill">
+        <span class="pill-icon" id="muteIcon">&#128263;</span>
+        <span class="pill-text" id="muteLabel">Tap to unmute</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-section">
+    <div class="prog-row">
+      <span class="prog-label">FOOTAGE PROGRESS</span>
+      <span class="prog-pct">80%</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill"></div></div>
+  </div>
+
+  <div class="hook-box">
+    <div class="hook-icon">&#128123;</div>
+    <div class="hook-text">
+      <div class="ht">The Full Reveal is on the Last Clip...</div>
+      <div class="hs">You are one clip away from seeing everything.</div>
+    </div>
+    <div class="hook-arrow">&#8250;</div>
+  </div>
+
+  <div class="social-row">
+    <div class="live-dot"></div>
+    <span>Millions are watching this right now</span>
+  </div>
+
+  <button class="cta" id="ctaBtn">👻 WATCH FINAL CLIP</button>
+  <div class="lock-note" id="lockNote"></div>
+
+  <div class="teaser-box">
+    <div class="teaser-text">🚨 You are ONE clip away. The 5th video is the most mysterious footage in this entire series. Do not stop now.</div>
+  </div>
+
+  <div class="ad-bottom"><!-- GPT 300x250 tag here --></div>
+
+  <div class="footer-icons">
+    <div>&#127909;<span>HD QUALITY</span></div>
+    <div>&#128274;<span>EXCLUSIVE</span></div>
+    <div>&#9889;<span>WATCH TILL END</span></div>
+  </div>
+
+  <div class="page-tag"><span>CLIP 4 OF 5</span></div>
+
+<script>
+  const video = document.getElementById('mainVideo');
+  const ctaBtn = document.getElementById('ctaBtn');
+  const lockNote = document.getElementById('lockNote');
+  const mutePill = document.getElementById('mutePill');
+  const muteIcon = document.getElementById('muteIcon');
+  const muteLabel = document.getElementById('muteLabel');
+
+  video.addEventListener('ended', () => {
+    ctaBtn.scrollIntoView({ behavior:'smooth', block:'center' });
+  });
+
+  ctaBtn.addEventListener('click', () => {
+    window.location.href = '/video5';
+  });
+
+  mutePill.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteIcon.innerHTML = video.muted ? '&#128263;' : '&#128266;';
+    muteLabel.textContent = video.muted ? 'Tap to unmute' : 'Tap to mute';
+  });
+</script>
+
+</body>
+</html>
